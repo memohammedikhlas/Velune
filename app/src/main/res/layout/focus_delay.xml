@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#111111">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your session"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How long do you want to use this app?"
+        android:textColor="#AAAAAA"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- ROW 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="28dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="1 min"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/session_button"/>
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="5 min"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/session_button"/>
+    </LinearLayout>
+
+    <!-- ROW 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn10"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="10 min"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/session_button"/>
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn15"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="15 min"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/session_button"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/customMinutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Custom minutes"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#777777"
+        android:inputType="number"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Start"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/session_button"/>
+
+</LinearLayout>

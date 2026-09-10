@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="120dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="@drawable/overlay_bg">
+
+        <TextView
+            android:id="@+id/countdownText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textSize="90sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/messageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Session Completed"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btn1Min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 Minute"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn5Min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 Minutes"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn10Min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10 Minutes"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn15Min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15 Minutes"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</FrameLayout>
