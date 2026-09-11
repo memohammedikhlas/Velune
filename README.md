@@ -1,6 +1,6 @@
 # Velune
 
-A minimalist Android launcher with a built-in focus/session timer, inspired by "minimalist phone: Launcher".
+A minimalist Android launcher with a built-in focus/session timer
 
 ## Features
 - Minimal home screen with clock, date, and favorite apps
