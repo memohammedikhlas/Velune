@@ -13,7 +13,7 @@ Grab the latest APK from the [Releases](../../releases) page — no Play Store n
 
 ## Build locally
 ```
-git clone <your-repo-url>
+git clone https://github.com/memohammedikhlas/Velune.git
 cd Velune
 ./gradlew assembleDebug
 ```
