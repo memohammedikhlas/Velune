@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+    <dimen name="space_xl">40dp</dimen>
+
+    <dimen name="radius_card">20dp</dimen>
+    <dimen name="radius_pill">28dp</dimen>
+
+    <dimen name="text_display">64sp</dimen>
+    <dimen name="text_title">24sp</dimen>
+    <dimen name="text_subtitle">16sp</dimen>
+    <dimen name="text_body">15sp</dimen>
+    <dimen name="text_caption">13sp</dimen>
+</resources>

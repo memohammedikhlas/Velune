@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_lg">
+
+        <TextView
+            android:id="@+id/blockTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Block App"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/usageSummaryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_subtitle" />
+
+        <TextView
+            android:id="@+id/blockDurationLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Block for"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_subtitle" />
+
+        <TextView
+            android:id="@+id/blockDurationValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="24 hours"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <SeekBar
+            android:id="@+id/blockDurationSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:max="8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1h"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_caption" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="30d"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_caption"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/slideToBlockBtn"
+            style="@style/Widget.Velune.Button.Pill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_lg"
+            android:text="SLIDE TO BLOCK →" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Other apps you may want to block"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_subtitle"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="(screen time in the last 7 days)"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_caption" />
+
+        <LinearLayout
+            android:id="@+id/otherAppsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+</ScrollView>
