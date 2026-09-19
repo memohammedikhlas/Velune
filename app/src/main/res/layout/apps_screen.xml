@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="@dimen/space_md">
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/search_field_bg"
+        android:paddingStart="@dimen/space_md"
+        android:paddingEnd="@dimen/space_md"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:hint="Search apps..."
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_tertiary"
+        android:textSize="@dimen/text_body"/>
+
+    <ListView
+        android:id="@+id/appsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/space_sm"
+        android:divider="@color/divider"
+        android:dividerHeight="1dp"/>
+
+    <TextView
+        android:id="@+id/settingsGearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/space_xs"
+        android:padding="@dimen/space_sm"
+        android:text="⚙"
+        android:textColor="@color/text_secondary"
+        android:textSize="22sp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+</LinearLayout>
