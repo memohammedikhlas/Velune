@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_lg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_lg"
+            android:layout_marginBottom="@dimen/space_lg"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.01" />
+
+        <!-- Appearance -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="@dimen/space_md"
+            android:layout_marginBottom="@dimen/space_md">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Appearance"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_subtitle"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="@dimen/space_sm" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accent color"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_caption"
+                android:layout_marginBottom="6dp" />
+
+            <LinearLayout
+                android:id="@+id/accentSwatchContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/space_sm" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Font style"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_caption"
+                android:layout_marginBottom="6dp" />
+
+            <LinearLayout
+                android:id="@+id/fontOptionContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+        <!-- Active Blocks -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="@dimen/space_md"
+            android:layout_marginBottom="@dimen/space_md">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Active Blocks"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_subtitle"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="@dimen/space_sm"
+                android:text="Long-press any app in your list and choose Block to add one. Tap here to unblock early."
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_caption" />
+
+            <ListView
+                android:id="@+id/activeBlocksListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/card_border"
+                android:dividerHeight="1dp" />
+
+            <TextView
+                android:id="@+id/noActiveBlocksText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No apps currently blocked"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_body"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Mindful Launch Delay -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="@dimen/space_md"
+            android:layout_marginBottom="@dimen/space_md">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mindful Launch Delay"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_subtitle"
+                    android:fontFamily="sans-serif-medium" />
+
+                <Switch
+                    android:id="@+id/launchDelaySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="@dimen/space_sm"
+                android:text="Take a short pause before any app opens. A little delay can go a long way in breaking habits."
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_caption" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delay (seconds):"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_body"
+                    android:layout_marginEnd="12dp" />
+
+                <EditText
+                    android:id="@+id/launchDelaySeconds"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:background="@drawable/search_field_bg"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+
+                <Button
+                    android:id="@+id/saveDelayBtn"
+                    style="@style/Widget.Velune.Button.PillSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_sm"
+                    android:text="Save" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Hidden Apps -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="@dimen/space_md"
+            android:layout_marginBottom="@dimen/space_md">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hidden Apps"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_subtitle"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="@dimen/space_sm"
+                android:text="Tap an app to unhide it."
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_caption" />
+
+            <ListView
+                android:id="@+id/hiddenAppsListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/card_border"
+                android:dividerHeight="1dp" />
+
+            <TextView
+                android:id="@+id/noHiddenAppsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No hidden apps"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_body"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Notification Filter -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="@dimen/space_md"
+            android:layout_marginBottom="@dimen/space_md">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Notification Filter"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_subtitle"
+                    android:fontFamily="sans-serif-medium" />
+
+                <Switch
+                    android:id="@+id/notificationFilterSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="@dimen/space_sm"
+                android:text="Hides notifications from apps that are currently blocked, and saves them here for later."
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_caption" />
+
+            <TextView
+                android:id="@+id/notifAccessStatusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_sm"
+                android:text="Notification access not granted — tap to grant"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_caption"
+                android:background="?attr/selectableItemBackground" />
+
+            <ListView
+                android:id="@+id/filteredNotifsListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/card_border"
+                android:dividerHeight="1dp" />
+
+            <TextView
+                android:id="@+id/noFilteredNotifsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No filtered notifications yet"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_body"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/clearFilteredNotifsBtn"
+                style="@style/Widget.Velune.Button.PillSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:text="Clear All" />
+
+        </LinearLayout>
+
+        <!-- Monochrome mode -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="@dimen/space_md"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monochrome Mode"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_subtitle"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="@dimen/space_sm"
+                android:text="Tap any app to dim it while you use it — a less stimulating, muted overlay."
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_caption" />
+
+            <EditText
+                android:id="@+id/monochromeSearchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search apps..."
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_tertiary"
+                android:background="@drawable/search_field_bg"
+                android:paddingStart="@dimen/space_md"
+                android:paddingEnd="@dimen/space_md"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="@dimen/space_sm" />
+
+            <ListView
+                android:id="@+id/monochromeAppsListView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:divider="@color/card_border"
+                android:dividerHeight="1dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
