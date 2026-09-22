@@ -41,11 +41,11 @@ Most "minimalist launcher" apps lock their best features — app blocking, notif
 ###  Real Data, Not Guesswork
 - Per-app screen time (last 7 days) pulled from Android's own usage stats — used to show you exactly how much time an app is costing you, and to suggest what else might be worth blocking
 
-## 📲 Download
+##  Download
 
 Grab the latest APK from the **[Releases](https://github.com/memohammedikhlas/Velune/releases)** page — no Play Store, no account, no sign-up.
 
-## 🛠️ Build from Source
+##  Build from Source
 
 ```bash
 git clone https://github.com/memohammedikhlas/Velune.git
