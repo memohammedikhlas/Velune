@@ -32,7 +32,7 @@ Most "minimalist launcher" apps lock their best features — app blocking, notif
 - **Blocking Schedules** — set a recurring weekly window (e.g. block Instagram 9am–5pm on weekdays) and it blocks itself, automatically
 - **Mindful Launch Delay** — add a short pause before any app opens, so opening it is a decision, not a reflex
 - **Notification Filter** — notifications from currently-blocked apps are held back instead of interrupting you, and saved for later
-- **Monochrome Mode** — dims distracting apps with a muted overlay while you're in them
+- **Monochrome Mode** — dims distracting apps with a muted overlay while you're in them.
 
 ###  Appearance
 - Choose an accent color and a font style to make it yours
