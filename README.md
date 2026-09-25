@@ -16,7 +16,7 @@ Most "minimalist launcher" apps lock their best features — app blocking, notif
 
 ##  Features
 
-###  Home Screen.
+###  Home Screen
 - Icon-free, text-only interface — nothing designed to grab your attention
 - Live clock (tap it to jump straight to your alarms) and date
 - Quick-access **Favorites**
