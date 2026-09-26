@@ -12,7 +12,7 @@ No icons. No feeds. No mindless scrolling. Just the apps you actually meant to o
 
 ## Why Velune?
 
-Most "minimalist launcher" apps lock their best features — app blocking, notification filtering, blocking schedules — behind a paywall. Velune doesn't. Every feature below is free, always.
+Most "minimalist launcher" apps lock their best features — app blocking, notification filtering, blocking schedules — behind a paywall. Velune doesn't. Every feature below is free, always
 
 ##  Features
 
