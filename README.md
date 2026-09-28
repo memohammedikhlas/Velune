@@ -35,8 +35,8 @@ Most "minimalist launcher" apps lock their best features — app blocking, notif
 - **Monochrome Mode** — dims distracting apps with a muted overlay while you're in them.
 
 ###  Appearance
-- Choose an accent color and a font style to make it yours
-- Guided onboarding on first launch
+- Choose an accent color and a font style to make it yours.
+- Guided onboarding on first launch.
 
 ###  Real Data, Not Guesswork
 - Per-app screen time (last 7 days) pulled from Android's own usage stats — used to show you exactly how much time an app is costing you, and to suggest what else might be worth blocking
