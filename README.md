@@ -23,7 +23,7 @@ Most "minimalist launcher" apps lock their best features — app blocking, notif
 - Search-first app drawer — type a name, don't scroll a grid.
 
 ###  Organization
-- **Rename** any app to whatever makes sense to you
+- **Rename** any app to whatever makes sense to you.
 - **Folders** — group apps together instead of scrolling past them.
 - **Hide** apps you don't want to see at all
 
