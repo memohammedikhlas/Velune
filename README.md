@@ -20,7 +20,7 @@ Most "minimalist launcher" apps lock their best features — app blocking, notif
 - Icon-free, text-only interface — nothing designed to grab your attention
 - Live clock (tap it to jump straight to your alarms) and date
 - Quick-access **Favorites**
-- Search-first app drawer — type a name, don't scroll a grid.
+- Search-first app drawer — type a name, don't scroll a grid
 
 ###  Organization
 - **Rename** any app to whatever makes sense to you.
