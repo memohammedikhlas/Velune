@@ -2,7 +2,7 @@
 
 **A minimalist Android launcher that helps you use your phone with intention — not by accident.**
 
-No icons. No feeds. No mindless scrolling. Just the apps you actually meant to open.
+No icons. No feeds. No mindless scrolling. Just the apps you actually meant to open
 
 ![Platform](https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white)
 ![Language](https://img.shields.io/badge/language-Kotlin-7F52FF?logo=kotlin&logoColor=white)
