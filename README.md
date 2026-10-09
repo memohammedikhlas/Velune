@@ -39,7 +39,7 @@ Most "minimalist launcher" apps lock their best features — app blocking, notif
 - Guided onboarding on first launch.
 
 ###  Real Data, Not Guesswork
-- Per-app screen time (last 7 days) pulled from Android's own usage stats — used to show you exactly how much time an app is costing you, and to suggest what else might be worth blocking
+- Per-app screen time (last 7 days) pulled from Android's own usage stats — used to show you exactly how much time an app is costing you, and to suggest what else might be worth blocking.
 
 ##  Download
 
