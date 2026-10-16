@@ -25,7 +25,7 @@ Most "minimalist launcher" apps lock their best features — app blocking, notif
 ###  Organization
 - **Rename** any app to whatever makes sense to you.
 - **Folders** — group apps together instead of scrolling past them.
-- **Hide** apps you don't want to see at all
+- **Hide** apps you don't want to see at all.
 
 ###  Focus & Blocking
 - **App Blocking** — block any app from 1 hour up to 30 days with a smooth slide-to-confirm gesture
